@@ -1,0 +1,14 @@
+
+<?php echo $model['bill_name'] ?> <?php _e(SCLNG_MAIL_ORDER_TITLE, SC_DOMAIN) ?><?php echo chr(10) ?>
+
+<?php _e(SCLNG_MAIL_DOWNLOAD_MESSAGE_01, SC_DOMAIN) ?><?php echo chr(10) ?>
+<?php _e(SCLNG_MAIL_DOWNLOAD_MESSAGE_02, SC_DOMAIN) ?><?php echo chr(10) ?>
+<?php _e(SCLNG_MAIL_DOWNLOAD_MESSAGE_03, SC_DOMAIN) ?><?php echo chr(10) ?>
+
+<?php echo $model['download_url'] ?>
+
+<?php echo chr(10) ?>
+<?php _e(SCLNG_MAIL_DOWNLOAD_MESSAGE_04, SC_DOMAIN) ?><?php echo chr(10) ?>
+<?php _e(SCLNG_MAIL_DOWNLOAD_MESSAGE_05, SC_DOMAIN) ?><?php echo chr(10) ?>
+<?php _e(SCLNG_MAIL_DOWNLOAD_MESSAGE_06, SC_DOMAIN) ?><?php echo chr(10) ?>
+

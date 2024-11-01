@@ -1,0 +1,35 @@
+/*
+ * This file is part of Teniteo.
+ * Copyright (c) EXBRIDGE,Inc. <info@exbridge.jp>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ * ie6の場合に適用
+ *
+ * @copyright   2009 EXBRIDGE,Inc. All Rights Reserved.
+ * @link        http://exbridge.jp/
+ * @package     Teniteo
+ * @version     svn:$Id: custom.css 299 2009-06-05 09:10:57Z shimizu $
+ */
+
+/* buddyPress ie6.css 指定の回避*/
+.sc_contents table * {
+    position: static;
+}
+* .sc_contents a {
+    position: static;
+}
+
+/** ------------------------------------------------------------------------------
+ * タブメニュー関連
+ *
+ */
+.sc_contents .tabmenu span {
+    width: 76px;
+}
+.sc_contents .tabmenu a {
+    width: 76px;
+}

@@ -1,0 +1,1166 @@
+/* 
+Basic layout structure styles for your BuddyPress component. The structure CSS performs
+basic structural formatting on component's interface. Your structure CSS should provide
+enough structure so that regardless of the theme enabled, your interface should still work.
+
+No colors, fonts or pretty stuff.
+
+These structure styles can be overridden by the theme CSS file if needed.
+*/
+
+/** ------------------------------------------------------------------------------
+ * buddyPress:マイページメニュー表示用
+ * 
+ */
+li a#user-simplecart-store, li a#my-simplecart-store {
+    background: url(../images/cart_kanri.png) 87% 52% no-repeat;
+}
+li a#user-simplecart-user, li a#my-simplecart-user {
+    background: url(../images/cart_ippan.png) 87% 52% no-repeat;
+}
+
+/** ------------------------------------------------------------------------------
+ * Simple Cart全般
+ *
+ */
+.sc_contents {
+    margin-left:auto;
+    margin-right:auto;
+    line-height: normal;
+}
+.sc_contents h2 {
+    width: 250px;
+    text-align:left;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: ridge 2px #0080c0;
+    margin-bottom: 8px;
+}
+.sc_contents h4 {
+    text-align:left;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.sc_contents form { text-align: left;}
+.sc_contents div  { text-align: left; }
+.sc_contents span { text-align: left; }
+.sc_contents p    { text-align: left; }
+.sc_contents th   { text-align: center; }
+.sc_contents span { text-align: left; }
+.sc_contents select { width: auto;}
+
+.sc_contents .center{ text-align:center; }
+.sc_contents .right { text-align:right; }
+.sc_contents .left  { text-align:left; }
+
+.sc_contents .input_40  { width: 40px; }
+.sc_contents .input_80  { width: 80px; }
+.sc_contents .input_120 { width: 120px; }
+.sc_contents .input_200 { width: 200px; }
+.sc_contents .input_280 { width: 280px; }
+
+.sc_contents .ml10  { margin-left: 10px; }
+
+.sc_contents .wd10  { width: 10px; }
+.sc_contents .wd15  { width: 15px; }
+.sc_contents .wd20  { width: 20px; }
+.sc_contents .wd30  { width: 30px; }
+.sc_contents .wd40  { width: 40px; }
+.sc_contents .wd60  { width: 60px; }
+.sc_contents .wd80  { width: 80px; }
+.sc_contents .wd100 { width: 100px; }
+.sc_contents .wd120 { width: 120px; }
+.sc_contents .wd160 { width: 160px; }
+.sc_contents .wd200 { width: 200px; }
+.sc_contents .wd250 { width: 250px; }
+.sc_contents .wd280 { width: 280px; }
+.sc_contents .wd300 { width: 300px; }
+.sc_contents .wd400 { width: 400px; }
+.sc_contents .wd450 { width: 450px; }
+.sc_contents .wd500 { width: 500px; }
+.sc_contents .wd600 { width: 600px; }
+.sc_contents .wd700 { width: 700px; }
+.sc_contents .wd800 { width: 800px; }
+.sc_contents .wd900 { width: 900px; }
+
+.sc_contents .ht10  { height: 10px; }
+.sc_contents .ht15  { height: 15px; }
+.sc_contents .ht20  { height: 20px; }
+.sc_contents .ht40  { height: 40px; }
+.sc_contents .ht60  { height: 60px; }
+.sc_contents .ht80  { height: 80px; }
+.sc_contents .ht120 { height: 120px; }
+
+.sc_contents .bold  { font-weight: bold }
+
+/** 住所検索 */
+.sc_contents .btn_search_address {
+    /*width:80px;*/
+}
+.sc_contents .address_list_area {
+    font-size:14px;
+}
+.sc_contents .address_list_area .close {
+    cursor:pointer;
+    color:#0F67A1;
+    text-decoration:underline;
+    text-align:center;
+    font-size:12px;
+    margin:3px 0px 3px 0px;
+}
+.sc_contents .address_list_area table{
+    width:auto;
+    border-collapse:collapse;
+}
+.sc_contents .address_list_area thead td{
+    background-color:#0F67A1;
+    color:#FFFFFF;
+    padding:5px 0px 5px 0px;
+    text-align:center;
+    border:1px solid #555555;
+}
+.sc_contents .address_list_area tbody td{
+    background:#FFFFFF;
+    padding:5px 2px 5px 2px;
+    border:1px solid #555555;
+    cursor:pointer;
+}
+.sc_contents .address_list_area .highlight{
+    background:#E2EDF4 !important;
+}
+
+/* 区切り線 */
+.sc_contents .sc_list_separator {
+    margin-top: 10px;
+    margin-bottom: 6px;
+    border-top: 1px solid #ccc;
+}
+
+/** 公開／非公開 */
+.sc_contents .sc_blue { color: #0000ff }
+.sc_contents .sc_red  { color: #ff0000 }
+
+/** OFF金額 */
+.sc_contents .sc_price_off  { 
+    text-decoration: line-through;
+    color: #ff0000;
+}
+
+/** 必須項目 */
+.sc_contents .required:after {
+    color: #ff0000;
+    content: " *";
+}
+
+/** 新着 */
+.sc_contents .sc_new {
+    color: #ff0000;
+}
+
+/** 店舗特典（カート内容画面） */
+.sc_contents .sc_cart_store_info {
+    width: 350px;
+    border: 1px solid #000000;
+    margin: 6px 0px 6px 0px;
+    padding: 3px;
+}
+.sc_contents .sc_cart_store_info_title {
+    text-decoration: underline;
+    color: #ff0000;
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+
+/** ダウンロード製品についての説明（受注詳細画面） */
+.sc_contents .sc_order_download_info {
+    width: 400px;
+    border: 1px solid #000000;
+    margin: 6px 0px 6px 0px;
+    padding: 3px;
+}
+.sc_contents .sc_order_download_title {
+    text-decoration: underline;
+    color: #ff0000;
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+
+/** 1行表示 */
+.sc_contents .row_content:after {
+    display: block;
+    clear: both;
+    content: " ";
+}
+.sc_contents .col_content {
+    float: left;
+}
+
+/** 公開ページ TOP画面 */
+.sc_contents .sc_top_lbl {
+    background-color: #f0f0f0;
+    max-width: 200px;
+    padding-left: 6px;
+    padding-bottom: 1px;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+.sc_contents .sc_top_mark {
+    color : #6699ff;
+    padding-right: 3px;
+}
+.sc_contents .sc_top_mark:before {
+    content: "■";
+}
+.sc_contents .sc_top_data {
+    padding-left: 6px;
+    padding-bottom: 1px;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+.sc_contents .sc_top_nodata {
+    padding-left: 6px;
+    color: #ff0000;
+}
+
+/** 一覧ページ ヘッダー（ページング部分） */
+.sc_contents .sc_list_header {
+    vertical-align: bottom;
+    margin-bottom: 4px;
+}
+.sc_list_header .sc_page {
+    margin-bottom: 2px;
+    vertical-align: bottom;
+}
+.sc_list_header .sc_sort {
+    padding: 2px;
+    background-color: #eeeeee;
+    border: 1px #cccccc solid;
+}
+.sc_sort .active{
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: #cccccc;
+}
+
+/** 一覧ページ 画像列用 */
+.sc_contents .sc_list_image {
+    cursor: pointer;
+}
+
+/** 詳細ページ 画像用 */
+.sc_contents .sc_detail_image {
+    cursor: pointer;
+}
+
+/** 詳細ページ 警告表示用（会員登録を促すメッセージ表示） */
+.sc_contents .sc_cart_alert {
+    width: 400px;
+    padding: 8px;
+    margin-top: 8px;
+    margin-left: 8px;
+    background-color: #f0f0f0;
+    border: 1px solid #0080c0;
+}
+
+/** 詳細ページ 在庫不足 */
+.sc_contents .sc_cart_lack_stock {
+    width: 400px;
+    padding: 8px;
+    margin-top: 8px;
+    margin-left: 8px;
+    background-color: #f0f0f0;
+    border: 1px solid #0080c0;
+}
+
+/** 全般 テーブル見出し（参照モード用） */
+.sc_contents .sc_subtitle {
+    width : 160px;
+    background-color: #0080c0;
+    color: #ffffff;
+    text-align: left;
+    font-size: 12px;
+    padding: 2px 0px 2px 4px;
+    margin-left: 0px;
+    margin-bottom: 2px;
+}
+
+/** 全般 テーブル見出し（更新モード用） */
+.sc_contents .sc_subtitle_updt {
+    width : 160px;
+    background-color: #006666;
+    color: #ffffff;
+    text-align:left;
+    font-size: 11px;
+    padding: 2px 0px 2px 4px;
+    margin-left: 0px;
+    margin-bottom: 2px;
+}
+
+/** テーブル見出し（店舗会員トップ） */
+.sc_contents .sc_subtitle_top {
+    width : 220px;
+    background-color: #0080c0;
+    color: #ffffff;
+    text-align: left;
+    font-size: 12px;
+    padding: 2px 0px 2px 4px;
+    margin-left: 0px;
+    margin-bottom: 2px;
+}
+
+/** カート=>購入までのナビゲーション（カート内容画面） */
+.sc_contents .sc_navigations {
+    padding-top: 2px;
+    padding-bottom: 8px;
+    height: 30px;
+}
+.sc_contents .sc_navigations:after {
+    display: block;
+    clear: both;
+    content: " ";
+}
+.sc_navigations .sc_navi_act {
+    padding: 6px;
+    font-weight: bold;
+    color: #fafafa;
+    background-color: #ff6600;
+    -moz-border-radius-bottomleft: 12px;
+    -moz-border-radius-bottomright: 12px;
+    -moz-border-radius-topleft: 12px;
+    -moz-border-radius-topright: 12px;
+    -moz-box-sizing: content-box;
+    width: auto;
+    float: left;
+    margin-bottom: 10px;
+}
+.sc_navigations .sc_navi {
+    padding: 6px;
+    font-weight: bold;
+    color: #ff6600;
+    background-color: #f0f0f0;
+    -moz-border-radius-bottomleft: 12px;
+    -moz-border-radius-bottomright: 12px;
+    -moz-border-radius-topleft: 12px;
+    -moz-border-radius-topright: 12px;
+    -moz-box-sizing: content-box;
+    width: auto;
+    float: left;
+    margin-bottom: 10px;
+}
+.sc_navigations .sc_navi_arrow {
+    background-image: url(../images/arrow.gif);
+    height: 27px;
+    width: 25px;
+    float: left;
+}
+
+/** マイページ カート一覧での店舗表示 */
+.sc_contents .sc_cart_store_lbl {
+    width: 35%;
+    text-align:left;
+    font-size: 12px;
+    font-weight: normal;
+    border-bottom: ridge 2px #0080c0;
+    margin-bottom: 4px;
+}
+
+/** マイページ カートが空の時 */
+.sc_contents .sc_cart_empty {
+    padding: 8px 0px 0px 20px;
+    color: #ff0000;
+    text-align:left;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 4px;
+}
+
+/** 注文完了メッセージ用 */
+.sc_contents .sc_order_complete {
+    width: 450px;
+    border: 2px solid #0080c0;
+    margin-bottom: 8px;
+}
+.sc_order_complete table {
+    width: 100%;
+    padding: 1px 1px 1px 1px;
+    border-collapse: separate;
+}
+.sc_order_complete td {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ffffff;
+    padding: 0px 2px 0px 2px;
+    font-size: 11px;
+    white-space: nowrap;
+    background-color: #eeeeee;
+}
+.sc_order_complete .sc_thanks {
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff0000;
+}
+.sc_order_complete .sc_order_lst {
+    padding: 8px 0px 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+}
+.sc_order_complete .sc_order_message {
+    padding: 8px 0px 8px 8px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #000000;
+}
+
+/** ------------------------------------------------------------------------------
+ * 表（テーブル）関連
+ *
+ */
+
+/** 単表形式 */
+.sc_contents .sc_tbl{
+    width: 450px;
+    border: 2px solid #0080c0;
+    margin-bottom: 8px;
+}
+.sc_tbl table {
+    width: 450px;
+    padding: 0px 0px 0px 0px;
+    border-collapse: separate;
+}
+.sc_tbl th {
+    width: 150px;
+    height: 18px;
+    padding: 0px 0px 0px 0px;
+    font-size: 11px;
+    white-space: nowrap;
+    background-color: #b3d9ff;
+    text-align: center;
+}
+.sc_tbl td {
+    width: 300px;
+    height: 18px;
+    padding: 0px 0px 0px 0px;
+    font-size: 11px;
+    white-space: nowrap;
+    background-color: #eeeeee;
+}
+
+/** 単表形式（更新系） */
+.sc_contents .sc_tbl_updt{
+    width: 450px;
+    border: 2px solid #006666;
+    margin-bottom: 8px;
+}
+.sc_tbl_updt table {
+    width: 450px;
+    padding: 0px 0px 0px 0px;
+    border-collapse: separate;
+}
+.sc_tbl_updt th {
+    width: 150px;
+    height: 18px;
+    padding: 0px 0px 0px 0px;
+    font-size: 11px;
+    white-space: nowrap;
+    background-color: #99cc99;
+    text-align: center;
+}
+.sc_tbl_updt td {
+    width: 300px;
+    height: 18px;
+    padding: 0px 0px 0px 0px;
+    font-size: 11px;
+    white-space: nowrap;
+    background-color: #eeeeee;
+}
+
+/** 単表形式（更新系 - 店舗会員 - 製品登録専用） */
+.sc_contents .sc_tbl_updt_product {
+    width: 600px;
+    border: 2px solid #006666;
+    margin-bottom: 8px;
+}
+.sc_tbl_updt_product table {
+    width: 600px;
+    padding: 0px 0px 0px 0px;
+    border-collapse: separate;
+}
+.sc_tbl_updt_product th {
+    width: 200px;
+    height: 18px;
+    padding: 0px 0px 0px 0px;
+    font-size: 11px;
+    white-space: nowrap;
+    background-color: #99cc99;
+    text-align: center;
+}
+.sc_tbl_updt_product td {
+    width: 400px;
+    height: 18px;
+    padding: 0px 0px 0px 0px;
+    font-size: 11px;
+    white-space: nowrap;
+    background-color: #eeeeee;
+}
+
+/** リスト形式 */
+/*
+.sc_contents .sc_tbl_lst{
+    width: 90%;
+    border: 2px solid #0080c0;
+    margin-bottom: 8px;
+}
+.sc_tbl_lst table {
+    width: 100%;
+    padding: 2px 2px 2px 2px;
+    border-collapse: separate;
+}
+.sc_tbl_lst th {
+    border: 1px solid #ffffff;
+    padding: 0px 2px 0px 2px;
+    height: 18px;
+    font-size: 11px;
+    white-space: nowrap;
+    background-color: #b3d9ff;
+    text-align: center;
+}
+.sc_tbl_lst td {
+    border: 1px solid #ffffff;
+    padding: 0px 2px 0px 2px;
+    height: 18px;
+    font-size: 11px;
+    white-space: nowrap;
+    background-color: #eeeeee;
+}
+*/
+/** リスト形式（自由に。。。） */
+.sc_contents .sc_tbl_lstfr{
+    margin-bottom: 8px;
+}
+.sc_tbl_lstfr table {
+    width: 100%;
+    margin: 0px;
+    border-top: 1px solid #0080c0;
+    border-left: 1px solid #0080c0;
+    border-right: 1px solid #0080c0;
+    border-bottom: 1px solid #0080c0;
+    padding: 2px 2px 2px 2px;
+    border-collapse: collapse;
+}
+.sc_tbl_lstfr th {
+    margin: 0px;
+    border-left: 1px solid #0080c0;
+    border-bottom: 1px solid #0080c0;
+    font-size: 11px;
+    white-space: nowrap;
+    background-color: #b3d9ff;
+    text-align: center;
+}
+.sc_tbl_lstfr td {
+    border-left: 1px solid #0080c0;
+    border-bottom: 1px solid #0080c0;
+    padding: 2px 2px 2px 2px;
+    font-size: 11px;
+    white-space: nowrap;
+    background-color: #f9f9f9;
+}
+
+/** 公開ページ 製品一覧用 */
+.sc_contents .sc_product_list {
+}
+.sc_product_list table {
+    width: 100%;
+    margin: 0px;
+    padding: 1px 1px 1px 1px;
+    border-collapse: collapse;
+}
+.sc_product_list td {
+    width:105px;
+    vertical-align: top;
+}
+.sc_product_list .image {
+    border: 1px solid #0080c0;
+    padding: 3px 3px 3px 3px;
+    width: 96px;
+    height: 96px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+.sc_product_list .name {
+    font-size: 12px;
+}
+.sc_product_list .price {
+    font-size: 11px;
+}
+.sc_product_list .store {
+    font-size: 12px;
+}
+
+.sc_product_list .description {
+    vertical-align: top;
+    border-bottom: 1px solid #0080c0;
+    white-space: normal;
+}
+
+/** 公開ページ 製品詳細用 */
+.sc_contents .sc_product{
+    width: 500px;
+    margin-bottom: 8px;
+}
+.sc_product table {
+    width: 500px;
+    padding: 0px 0px 0px 0px;
+    border-collapse: collapse;
+}
+.sc_product td {
+    padding: 0px 0px 0px 12px;
+    font-size: 11px;
+    background-color: #ffffff;
+    vertical-align: top;
+}
+.sc_product .image_td {
+    padding: 0px 0px 0px 0px;
+    vertical-align: top;
+    width: 194px;
+    height: 194px;
+}
+.sc_product .pd_message {
+    padding: 0px 0px 3px 0px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #0000ff;
+}
+.sc_product .pd_image {
+    border: 1px solid #0080c0;
+    cursor: pointer;
+    text-align: center;
+}
+.sc_product .pd_store {
+    width: 250px;
+    padding: 3px 0px 3px 3px;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    border-top: 3px solid #0033dd;
+}
+.sc_product .pd_name {
+    width: 250px;
+    padding: 3px 0px 1px 3px;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+}
+.sc_product .pd_code {
+    width: 250px;
+    padding: 1px 0px 6px 3px;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+}
+.sc_product .pd_category {
+    width: 250px;
+    padding: 3px 0px 3px 3px;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    border-top: 1px dashed #0033dd;
+}
+.sc_product .pd_price {
+    width: 250px;
+    padding: 6px 0px 3px 3px;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    border-top: 1px dashed #0033dd;
+    border-bottom: 3px solid #0033dd;
+}
+.sc_product .pd_description {
+    width: 250px;
+    padding: 9px 6px 9px 6px;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+}
+.sc_product .pd_add_description {
+    width: 230px;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding: 3px 3px 3px 6px;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    border: 2px solid #0033dd;
+}
+.sc_product .pd_separator {
+    width: 460px;
+    border-top: 3px solid #0033dd;
+    margin-top: 12px;
+}
+.sc_product .pd_buy {
+    width: 90%;
+    margin-top: 8px;
+    padding: 0px 0px 0px 0px;
+    background-color: #f9f9f9;
+    border: 1px #cccccc solid;
+}
+.sc_product .pd_buy_row {
+    width: 100%;
+    margin-top: -1px;
+    padding: 0px 0px 0px 0px;
+    border-top: 1px #cccccc dashed;
+}
+.sc_product .pd_buy_row:after {
+    display: block;
+    clear: both;
+    content: " ";
+}
+.sc_product .pd_buy_novariation {
+    margin-top: 8px;
+    padding: 10px 0px 0px 6px;
+}
+.sc_product .pd_buy_novariation:after {
+    display: block;
+    clear: both;
+    content: " ";
+}
+.pd_buy .pd_buy_lbl {
+    width: 130px;
+    float: left;
+    font-size: 12px;
+    padding: 3px 0px 3px 4px;
+    text-align: left;
+}
+.pd_buy .pd_buy_price {
+    width: 100px;
+    float: left;
+    font-size: 12px;
+    padding: 3px 0px 3px 4px;
+    text-align: left;
+}
+.pd_buy .pd_buy_quantity {
+    font-size: 12px;
+    float: left;
+    padding: 3px 0px 3px 4px;
+    text-align: left;
+}
+
+.pd_buy_novariation .pd_buy_quantity {
+    font-size: 12px;
+    float: left;
+    padding: 3px 0px 3px 4px;
+    text-align: left;
+}
+.pd_buy_novariation .pd_buy_stock {
+    float: left;
+    font-size: 12px;
+    padding: 7px 0px 3px 4px;
+    text-align: left;
+}
+
+.sc_product .pd_price_delivery {
+    background: url(../images/delivery.gif) no-repeat;
+    margin-top: 2px;
+    padding: 0px 0px 0px 20px;
+}
+.sc_product .pd_price_download {
+    background: url(../images/download.gif) no-repeat;
+    margin-top: 2px;
+    padding: 0px 0px 0px 20px;
+}
+.sc_product .pd_product_type {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 0px 0px 2px;
+    text-align: left;
+    color: #0000ff;
+}
+.sc_product .pd_option {
+    font-size: 12px;
+    padding: 3px 3px 0px 3px;
+}
+
+#review_input_area {
+    padding:10px;
+}
+#review_input_area .error_small{
+    color:#f00f00;
+}
+
+#review_input_area table {
+    width:100%;
+    text-align:left;
+}
+#review_input_area table th{
+    width:60px;
+    vertical-align:top;
+}
+
+#review_input_area table th,
+#review_input_area table td{
+    padding:5px 0px 5px 0px;
+}
+
+#review_input_area table .review_comment textarea{
+    width:95%;
+    font-size:12px;
+    padding:4px 2px 4px 2px;
+}
+
+#review_input_area table .review_control{
+    text-align:center;
+}
+.sc_product .review_area {
+    font-size:12px;
+}
+.sc_product .review_area table {
+}
+.sc_product .review_area table td{
+    padding:0 0 0 0;
+    font-size:12px;
+}
+.sc_product .review_area table .review_user_lbl{
+    padding-left: 3px;
+}
+.sc_product .review_area table .review_recommend{
+    color:#EC0000;
+}
+.sc_product .review_area table .review_recommend .label{
+    color:#555555;
+    font-size:11px;
+    font-weight:bold;
+}
+.sc_product .review_area table .review_comment{
+    padding-top:5px;
+    padding-bottom:5px;
+    border-bottom: 1px dashed #0033dd;
+    margin-bottom: 3px;
+}
+.sc_product .review_area table .review_list_all{
+    display:none;
+}
+
+/** マイページ カート内容一覧用 */
+.sc_contents .sc_cart_list {
+    margin-bottom: 8px;
+}
+.sc_cart_list table {
+    width: 100%;
+    margin: 0px;
+    border-top: 1px solid #0080c0;
+    border-left: 1px solid #0080c0;
+    border-right: 1px solid #0080c0;
+    border-bottom: 1px solid #0080c0;
+    padding: 2px 2px 2px 2px;
+    border-collapse: collapse;
+}
+.sc_cart_list th {
+    margin: 0px;
+    border-left: 1px solid #0080c0;
+    border-bottom: 1px solid #0080c0;
+    height: 18px;
+    font-size: 11px;
+    white-space: nowrap;
+    background-color: #b3d9ff;
+    text-align: center;
+}
+.sc_cart_list td {
+    border-left: 1px solid #0080c0;
+    border-bottom: 1px solid #0080c0;
+    padding: 0px 2px 0px 2px;
+    height: 30px;
+    font-size: 11px;
+    white-space: nowrap;
+    background-color: #f9f9f9;
+}
+.sc_cart_list .image {
+    width: 96px;
+    height: 96px;
+    border-bottom: 1px solid #0080c0;
+    padding: 1px;
+}
+.sc_cart_list .name {
+    font-size: 12px;
+}
+.sc_cart_list .quantity {
+    text-align: center;
+}
+.sc_cart_list .free {
+    text-align: left;
+    padding: 4px;
+}
+.sc_cart_list .dl_product {
+    font-size: 11px;
+    color: #0000ff;
+}
+
+/** 店舗管理 受注一覧用 */
+.sc_contents .sc_order_list {
+    margin-bottom: 8px;
+}
+.sc_order_list table {
+    width: 100%;
+    margin: 0px;
+    border-top: 1px solid #0080c0;
+    border-left: 1px solid #0080c0;
+    border-right: 1px solid #0080c0;
+    border-bottom: 1px solid #0080c0;
+    padding: 2px 2px 2px 2px;
+    border-collapse: collapse;
+}
+.sc_order_list th {
+    margin: 0px;
+    border-left: 1px solid #0080c0;
+    border-bottom: 1px solid #0080c0;
+    height: 18px;
+    font-size: 11px;
+    white-space: nowrap;
+    background-color: #b3d9ff;
+    text-align: center;
+}
+.sc_order_list td {
+    border-left: 1px solid #0080c0;
+    border-bottom: 1px solid #0080c0;
+    padding: 0px 2px 0px 2px;
+    height: 30px;
+    font-size: 11px;
+    white-space: nowrap;
+    background-color: #f9f9f9;
+}
+.sc_order_list .dl_product {
+    font-size: 11px;
+    color: #0000ff;
+}
+
+/** マイページ お気に入り一覧用 */
+.sc_contents .sc_favorite_list {
+    margin-bottom: 8px;
+}
+.sc_favorite_list table {
+    width: 100%;
+    margin: 0px;
+    border-top: 1px solid #0080c0;
+    border-left: 1px solid #0080c0;
+    border-right: 1px solid #0080c0;
+    border-bottom: 1px solid #0080c0;
+    padding: 2px 2px 2px 2px;
+    border-collapse: collapse;
+}
+.sc_favorite_list th {
+    margin: 0px;
+    border-left: 1px solid #0080c0;
+    border-bottom: 1px solid #0080c0;
+    height: 18px;
+    font-size: 11px;
+    white-space: nowrap;
+    background-color: #b3d9ff;
+    text-align: center;
+}
+.sc_favorite_list td {
+    border-left: 1px solid #0080c0;
+    border-bottom: 1px solid #0080c0;
+    padding: 0px 2px 0px 2px;
+    height: 30px;
+    font-size: 11px;
+    white-space: nowrap;
+    background-color: #f9f9f9;
+}
+.sc_favorite_list .image {
+    width: 96px;
+    height: 96px;
+    border-bottom: 1px solid #0080c0;
+    padding: 1px;
+}
+.sc_favorite_list .name {
+    font-size: 12px;
+}
+
+/** 店舗管理 レビュー一覧用 */
+.sc_contents .sc_review_list {
+    margin-bottom: 8px;
+}
+.sc_review_list table {
+    width: 100%;
+    margin: 0px;
+    border-top: 1px solid #0080c0;
+    border-left: 1px solid #0080c0;
+    border-right: 1px solid #0080c0;
+    border-bottom: 1px solid #0080c0;
+    padding: 2px 2px 2px 2px;
+    border-collapse: collapse;
+}
+.sc_review_list th {
+    margin: 0px;
+    border-left: 1px solid #0080c0;
+    border-bottom: 1px solid #0080c0;
+    height: 18px;
+    font-size: 11px;
+    white-space: nowrap;
+    background-color: #b3d9ff;
+    text-align: center;
+}
+.sc_review_list td {
+    border-left: 1px solid #0080c0;
+    border-bottom: 1px solid #0080c0;
+    padding: 0px 2px 0px 2px;
+    height: 30px;
+    font-size: 11px;
+    white-space: nowrap;
+    background-color: #f9f9f9;
+}
+.sc_review_list .name {
+    font-size: 12px;
+}
+
+/** 店舗管理 受注情報用 */
+.sc_contents table.thread_detail {
+    width:900px;
+}
+.sc_contents .thread_detail .message {
+    width:600px;
+}
+.sc_contents .thread_detail th.message {
+    text-align:center;
+}
+
+.sc_contents .message_sender .message-header {
+    background:transparent url(../images/background_comment_message_header_sender.gif) no-repeat scroll left top;
+    height:28px;
+    padding:5px 30px 0 30px;
+    width:540px;
+}
+.sc_contents .message_receiver .message-header {
+    background:transparent url(../images/background_comment_message_header_receiver.gif) no-repeat scroll right top;
+    height:28px;
+    padding:5px 30px 0 30px;
+    text-align:right;
+    width:540px;
+}
+
+.sc_contents .message-body {
+    background:transparent url(../images/background_comment_message_middle.gif) repeat-y scroll left top;
+    padding:5px 30px 0 30px;
+    width:540px;
+}
+.sc_contents .message-footer {
+    background:transparent url(../images/background_comment_message_bottom.gif) no-repeat scroll left top;
+    height:10px;
+    padding:0 30px 0 30px;
+    width:540px;
+}
+
+/** ------------------------------------------------------------------------------
+ * タブメニュー関連
+ *
+ */
+.sc_contents .tabmenu {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 10px 0px;
+    width: 100%;
+}
+.tabmenu span {
+    min-width: 76px;
+    float: left;
+    padding: 3px 3px 3px 3px;
+    margin: 0px 0px 0px 0px;
+    background: url(../images/tab.png) no-repeat;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.tabmenu .tab-selected {
+    background: url(../images/tab_on.png) no-repeat;
+}
+.tabmenu:after {
+    display: block;
+    clear: both;
+    content: " ";
+}
+.tabmenu a {
+    min-width: 76px;
+    display: block;
+    padding: 0px 0px 0px 0px;
+    color: #27537a;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    outline: 0;
+    cursor: pointer;
+}
+
+/** ------------------------------------------------------------------------------
+ * ボタン関連
+ *
+ */
+.sc_contents button {
+    background: url(../images/white-grad.png) repeat-x scroll left top;
+    text-shadow: 0 1px 0 #ffffff;
+    border-color: #bbbbbb;
+    color: #464646;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-box-sizing: content-box;
+    border-style: solid;
+    border-width: 1px;
+    text-decoration: none;
+    padding: 2px 6px 2px 6px;
+    font-size: 12px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+.sc_contents .button_buy{
+    background-image: url(../images/cart_ippan.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-color: #eeeeee;
+    padding: 4px 0px 4px 16px;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+.sc_contents .sc_quantity_up {
+    background: url(../images/up.gif) center top;
+    -moz-border-radius-bottomleft: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 0px;
+    -moz-box-sizing: content-box;
+    background-repeat: no-repeat;
+    font-weight: normal;
+    font-size: 10px;
+    border: 0px solid;
+    padding: 0px;
+    margin: 0px;
+    width: 20px;
+    height: 20px;
+}
+
+.sc_contents .sc_quantity_down {
+    background: url(../images/down.gif) center top;
+    -moz-border-radius-bottomleft: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 0px;
+    -moz-box-sizing: content-box;
+    background-repeat: no-repeat;
+    font-weight: normal;
+    font-size: 10px;
+    border: 0px solid;
+    padding: 0px;
+    margin: 0px;
+    width: 20px;
+    height: 20px;
+}

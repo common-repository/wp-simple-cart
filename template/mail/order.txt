@@ -1,0 +1,61 @@
+
+<?php echo $model['bill_name'] ?> <?php _e(SCLNG_MAIL_ORDER_TITLE, SC_DOMAIN) ?><?php echo chr(10) ?>
+
+<?php _e(sprintf(SCLNG_MAIL_ORDER_MESSAGE_01, $model['store_name']), SC_DOMAIN) ?><?php echo chr(10) ?>
+<?php _e(SCLNG_MAIL_ORDER_MESSAGE_02, SC_DOMAIN) ?><?php echo chr(10) ?>
+
+******************************************************************
+<?php _e(SCLNG_MAIL_BILL_INFO, SC_DOMAIN) ?><?php echo chr(10) ?>
+******************************************************************
+<?php _e(SCLNG_MAIL_ORDER_NO, SC_DOMAIN) ?><?php echo chr(10) ?>
+ <?php echo $model['order_id'] ?><?php echo chr(10) ?>
+<?php _e(SCLNG_MAIL_ORDER_PAID_TOTAL, SC_DOMAIN) ?><?php echo chr(10) ?>
+ <?php echo $model['total'] ?><?php echo chr(10) ?>
+<?php _e(SCLNG_MAIL_ORDER_PAID_METHOD, SC_DOMAIN) ?><?php echo chr(10) ?>
+ <?php echo $model['paid_method'] ?><?php echo chr(10) ?>
+<?php if ($model['download']=='0'): ?>
+<?php _e(SCLNG_MAIL_ORDER_DELIVERY, SC_DOMAIN) ?><?php echo chr(10) ?>
+ <?php echo $model['delivery'] ?><?php echo chr(10) ?>
+<?php _e(SCLNG_MAIL_ORDER_DELIVERY_TIME, SC_DOMAIN) ?><?php echo chr(10) ?>
+ <?php echo $model['delivery_time'] ?><?php echo chr(10) ?>
+<?php _e(SCLNG_MAIL_ORDER_DELIVERY_INFO, SC_DOMAIN) ?><?php echo chr(10) ?>
+ <?php echo $model['send_name'] ?> <?php _e(SCLNG_MAIL_ORDER_TITLE, SC_DOMAIN) ?><?php echo chr(10) ?>
+ <?php echo $model['zip'] ?><?php echo chr(10) ?>
+ <?php echo $model['address'] ?><?php echo chr(10) ?>
+ <?php echo $model['tel'] ?><?php echo chr(10) ?>
+<?php endif; ?>
+
+******************************************************************
+<?php _e(SCLNG_MAIL_ORDER_INFO, SC_DOMAIN) ?><?php echo chr(10) ?>
+******************************************************************
+<?php if(is_array($model['items'])): ?>
+<?php foreach($model['items'] as $item): ?>
+<?php _e(SCLNG_MAIL_ORDER_PRODUCT_NAME, SC_DOMAIN) ?><?php echo chr(10) ?>
+ <?php echo $item['product_name'] ?><?php echo chr(10) ?>
+<?php _e(SCLNG_MAIL_ORDER_PRODUCT_CODE, SC_DOMAIN) ?><?php echo chr(10) ?>
+ <?php echo $item['product_cd'] ?><?php echo chr(10) ?>
+<?php _e(SCLNG_MAIL_ORDER_QUANTITY, SC_DOMAIN) ?><?php echo chr(10) ?>
+ <?php echo $item['quantity'] ?><?php echo chr(10) ?>
+<?php _e(SCLNG_MAIL_ORDER_PRICE, SC_DOMAIN) ?><?php echo chr(10) ?>
+ <?php echo SimpleCartFunctions::MoneyFormat($item['total']) ?><?php echo chr(10) ?>
+<?php endforeach ?>
+<?php endif ?>
+
+-----------------------------------------------------------
+<?php if($model['delivery_fee']>0): ?>
+<?php _e(SCLNG_MAIL_ORDER_DELIVERY_FEE, SC_DOMAIN) ?><?php echo chr(10) ?>
+ <?php echo SimpleCartFunctions::MoneyFormat($model['delivery_fee']) ?><?php echo chr(10) ?>
+<?php endif ?>
+<?php if($model['commission']>0): ?>
+<?php _e(SCLNG_MAIL_ORDER_COMMISSION, SC_DOMAIN) ?><?php echo chr(10) ?>
+ <?php echo SimpleCartFunctions::MoneyFormat($model['commission']) ?><?php echo chr(10) ?>
+<?php endif ?>
+==============================================================
+<?php _e(SCLNG_MAIL_ORDER_TOTAL, SC_DOMAIN) ?><?php echo chr(10) ?>
+ <?php echo SimpleCartFunctions::MoneyFormat($model['total']) ?><?php echo chr(10) ?>
+==============================================================
+
+<?php _e(SCLNG_MAIL_ORDER_MESSAGE_03, SC_DOMAIN) ?><?php echo chr(10) ?>
+<?php _e(SCLNG_MAIL_ORDER_MESSAGE_04, SC_DOMAIN) ?><?php echo chr(10) ?>
+<?php _e(SCLNG_MAIL_ORDER_MESSAGE_05, SC_DOMAIN) ?><?php echo chr(10) ?>
+

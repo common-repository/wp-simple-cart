@@ -1,0 +1,9 @@
+
+<?php _e(SCLNG_MAIL_MEMBER_ENTRY_MESSAGE_01, SC_DOMAIN) ?><?php echo chr(10) ?>
+<?php _e(SCLNG_MAIL_MEMBER_ENTRY_MESSAGE_02, SC_DOMAIN) ?><?php echo chr(10) ?>
+
+<?php echo "http://" . $model['site_domain'] . $model['site_path'] . "wp-activate.php?key=" . $model['activate_key'] ?>
+
+<?php echo chr(10) ?>
+<?php _e(SCLNG_MAIL_MEMBER_ENTRY_MESSAGE_03, SC_DOMAIN) ?><?php echo chr(10) ?>
+
